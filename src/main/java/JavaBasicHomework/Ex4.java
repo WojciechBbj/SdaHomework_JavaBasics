@@ -10,10 +10,14 @@ public class Ex4 {
         for (int i = tableSize - 1; i >= 0; i--) {
 
             //changedTable[i] = table[tableSize - 1 - i];
-            if (i > 0 ) {
-                System.out.print(table[i] + ", ");
+            if (table.length >= 2) {
+                if (i > 0) {
+                    System.out.print(table[i] + ", ");
+                } else {
+                    System.out.print(table[i] + ".");
+                }
             } else {
-                System.out.print(table[i] + ".");
+                System.out.println("Ta tablica jest za mała");
             }
 
         }

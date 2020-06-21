@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Ex3 {
 
-    public static int sumOfNumber(int X, int Y) {
-        int sumOfNumber = 0;
+    public static int sumOfNumberRange(int X, int Y) {
+        int sumOfNumberRange = 0;
 
         while (X <= Y) {
-            sumOfNumber += X;
+            sumOfNumberRange += X;
             X++;
         }
 
-        return sumOfNumber;
+        return sumOfNumberRange;
     }
 
     public static void main (String[] args) {
@@ -24,6 +24,6 @@ public class Ex3 {
         System.out.print("Podaj druga liczbe (Y): ");
         int numberY = scanner.nextInt();
 
-        System.out.println("Suma liczb X - Y, to: " + sumOfNumber(numberX, numberY));
+        System.out.println("Suma liczb X - Y, to: " + sumOfNumberRange(numberX, numberY));
     }
 }
