@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex5 {
 
 
-    public static void tablePrint(int[] table) {
+    public static void printTable(int[] table) {
         for (int i = 0; i < table.length; i++) {
             if (i < table.length - 1) {
                 System.out.print(table[i] + ", ");
@@ -49,7 +49,7 @@ public class Ex5 {
             table[i] = scanner.nextInt();
         }
         System.out.println("Wprowadzona tablica ma postać:");
-        tablePrint(table);
+        printTable(table);
 
         System.out.println("Maksymalna liczba w tablicy to: " + maxNumber(table));
 
