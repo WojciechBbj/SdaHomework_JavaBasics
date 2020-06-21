@@ -3,16 +3,8 @@ package JavaBasicHomework;
 import java.util.Scanner;
 
 public class Ex5 {
-    
-    public static void tableInputNumbers(int[] table, int tableSize) {
-        Scanner scanner = new Scanner(System.in);
-        table = new int[tableSize];
-        for (int i = 0; i < tableSize; i++) {
-            System.out.print("Podaj element " + i + " tablicy: ");
-            table[i] = scanner.nextInt();
-        }
-    }
-    
+
+
     public static void tablePrint(int[] table) {
         for (int i = 0; i < table.length; i++) {
             if (i < table.length - 1) {
@@ -24,7 +16,7 @@ public class Ex5 {
         System.out.println();
     }
 
-    public static int maxNumber (int[] table) {
+    public static int maxNumber(int[] table) {
         int maxNumber = 0;
         for (int i = 0; i < table.length; i++) {
             if (table[i] >= maxNumber) {
@@ -34,7 +26,7 @@ public class Ex5 {
         return maxNumber;
     }
 
-    public static int minNumber (int[] table) {
+    public static int minNumber(int[] table) {
         int minNumber = maxNumber(table);
         for (int i = 0; i < table.length; i++) {
             if (table[i] <= minNumber) {
@@ -43,14 +35,14 @@ public class Ex5 {
         }
         return minNumber;
     }
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj rozmiar tablicy: ");
         int tableSize = scanner.nextInt();
-        
+
         int[] table = new int[tableSize];
-        
+
         //uzupełnienie tablicy
         for (int i = 0; i < tableSize; i++) {
             System.out.print("Podaj element " + i + " tablicy: ");
