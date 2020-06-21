@@ -18,17 +18,14 @@ public class Ex8 {
     }
 
     public static boolean isArithmeticSeries(int[] table) {
-        int diffCheck;
+        int diffCheck = table[1] - table[0];
         boolean isTrue = false;
         for (int i = 0; i < table.length - 1; i++) {
-            diffCheck = table[i + 1] - table[i];
-            for (int j = 0; j <= i; j++) {
-                if (diffCheck == table[j + 1] - table[j]) {
-                    isTrue = true;
-                } else {
-                    isTrue = false;
-                    break;
-                }
+            if (diffCheck == table[i + 1] - table[i]) {
+                isTrue = true;
+            } else {
+                isTrue = false;
+                break;
             }
         }
         return isTrue;
@@ -51,6 +48,7 @@ public class Ex8 {
             }
         }
     }
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
