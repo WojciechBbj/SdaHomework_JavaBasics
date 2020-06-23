@@ -1,6 +1,6 @@
 package OOP_Excercises;
 
-public class AbstractCar {
+public abstract class AbstractCar {
     String producer;
     String model;
     String color;
