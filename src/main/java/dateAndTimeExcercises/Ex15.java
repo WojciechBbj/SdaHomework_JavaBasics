@@ -20,7 +20,7 @@ public class Ex15 {
 
     public void shoDateTime() {
         System.out.println("Czas przed ustawieniem formatu czasu: " + localDateTime);
-        System.out.println("Czas w Bydgoszczy: " + localDateTime.format(dateTimeFormatter));
+         System.out.println("Czas w Bydgoszczy: " + localDateTime.format(dateTimeFormatter));
 
     }
 }
