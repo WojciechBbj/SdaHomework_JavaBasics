@@ -2,7 +2,7 @@ package java_exercises_3_sda;
 
 import java.util.Scanner;
 
-public class Cat implements Animal {
+public class Cat implements Animal, Movable {
 
     private String catName;
 
@@ -13,6 +13,11 @@ public class Cat implements Animal {
     @Override
     public String makeSound() {
         return catName + " makes miau miau !!!";
+    }
+
+    @Override
+    public String move() {
+        return "idę";
     }
 
     public void eatMouse() {

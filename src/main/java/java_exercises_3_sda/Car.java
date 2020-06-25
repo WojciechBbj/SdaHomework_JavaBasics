@@ -4,6 +4,6 @@ public class Car implements Movable {
 
     @Override
     public String move() {
-        return "idę";
+        return "jadę";
     }
 }
