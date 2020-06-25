@@ -2,14 +2,19 @@ package java_exercises_3_sda;
 
 public class Dog implements Animal {
 
-    public String dogName;
+    public String name;
 
-    public Dog(String dogName) {
-        this.dogName = dogName;
+    public Dog(String name) {
+        this.name = name;
     }
 
     @Override
     public String makeSound() {
-         return dogName + " makes hau hau !!!";
+         return name + " makes hau hau !!!";
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

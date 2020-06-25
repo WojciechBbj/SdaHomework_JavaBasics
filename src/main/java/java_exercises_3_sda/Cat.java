@@ -4,15 +4,17 @@ import java.util.Scanner;
 
 public class Cat implements Animal, Movable {
 
-    private String catName;
+    private String name;
 
-    public Cat(String catName) {
-        this.catName = catName;
+    public Cat(String name) {
+
+        this.name = name;
     }
 
     @Override
     public String makeSound() {
-        return catName + " makes miau miau !!!";
+
+        return name + " makes miau miau !!!";
     }
 
     @Override
@@ -23,10 +25,15 @@ public class Cat implements Animal, Movable {
     public void eatMouse() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ile myszy zjadł " + catName + " ?");
+        System.out.println("Ile myszy zjadł " + name + " ?");
         int howManyMouse = scanner.nextInt();
 
-        System.out.println(catName + ": Zjadłem " + howManyMouse + " myszy\n");
+        System.out.println(name + ": Zjadłem " + howManyMouse + " myszy\n");
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
     
 }
