@@ -23,7 +23,7 @@ public class OrderItem {
     public void print() {
 
         if (isCorrect()) {
-            System.out.println(itemName + " w ilości " + itemQuantity + " po cenie " + price + ", koszt zamowienia - " + getValue());
+            System.out.println(itemName + " w ilości " + itemQuantity + " po cenie " + price + ", koszt zamowienia: " + getValue());
         } else {
             System.out.println("Ilość sztuk lub cene powinna być większa od 0");
         }
