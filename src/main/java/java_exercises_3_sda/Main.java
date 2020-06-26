@@ -17,21 +17,22 @@ public class Main {
 //        cat2.eatMouse();
 //        cat3.eatMouse();
 
-        Ex5 ex5 = new Ex5();
-        ex5.ex5();
+//        Ex5 ex5 = new Ex5();
+//        ex5.ex5();
+//
+//        Vet movableCat1 = new Vet();
+//        movableCat1.sayHello(cat1);
+//
+//        Vet movableDog1 = new Vet();
+//        movableDog1.sayHello(dog1);
+//
+//        Animal animal1 = new Cat("Garield");
+//
+//        Vet moveAnimal1 = new Vet();
+//        moveAnimal1.sayHello(animal1);
 
-        Vet movableCat1 = new Vet();
-        movableCat1.sayHello(cat1);
-        
-        Vet movableDog1 = new Vet();
-        movableDog1.sayHello(dog1);
-
-        Animal animal1 = new Cat("Garield");
-
-        Vet moveAnimal1 = new Vet();
-        moveAnimal1.sayHello(animal1);
-
-
+        Ex12 ex12 = new Ex12();
+        ex12.ex12();
 
     }
 }

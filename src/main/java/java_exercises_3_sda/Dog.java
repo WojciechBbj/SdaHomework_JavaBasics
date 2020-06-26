@@ -5,7 +5,7 @@ public class Dog implements Animal {
     public String name;
 
     public Dog(String name) {
-        this.name = name;
+                                                                                                       this.name = name;
     }
 
     @Override
