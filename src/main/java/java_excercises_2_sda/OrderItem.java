@@ -28,4 +28,16 @@ public class OrderItem {
             System.out.println("Ilość sztuk lub cene powinna być większa od 0");
         }
     }
+
+    public String getItemName () {
+        return itemName;
+    }
+
+    public double getItemQuantity() {
+        return itemQuantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
