@@ -1,5 +1,9 @@
 package OOP_Excercises;
 
+import lombok.ToString;
+
+@ToString
+
 public class Engine {
     double capacity;
     int horsePower;

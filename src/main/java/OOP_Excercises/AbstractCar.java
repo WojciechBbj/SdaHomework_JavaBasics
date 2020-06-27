@@ -8,6 +8,7 @@ public abstract class AbstractCar {
     Engine engine;
 
     public AbstractCar() {
+
         this.seatsNumber = 2;
     }
 
@@ -15,5 +16,16 @@ public abstract class AbstractCar {
         this.producer = producer;
         this.model = model;
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractCar{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", seatsNumber=" + seatsNumber +
+                ", engine=" + engine +
+                '}';
     }
 }

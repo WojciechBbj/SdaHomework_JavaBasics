@@ -17,5 +17,9 @@ public class Main {
 
         person2.introduce();
         person2.getAddress().showAdress();
+
+        Engine porscheEngine = new Engine(5, 560, 35);
+        SportCar porsche = new SportCar("Porsche", "Carrera", "grey", 2, porscheEngine);
+        System.out.println(porsche.toString());
     }
 }
