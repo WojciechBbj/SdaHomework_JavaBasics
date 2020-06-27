@@ -10,8 +10,9 @@ public class Ex2 {
 
     public static void addNumberToList (int howMuchNumbers) {
         System.out.println("2a, Adding numbers to list");
-        int random = (int)(Math.random()*10);
+        int random;
         for (int i = 0; i < howMuchNumbers; i++) {
+            random = (int)(Math.random()*10);
             listOfNumbers.add(random);
         }
     }
