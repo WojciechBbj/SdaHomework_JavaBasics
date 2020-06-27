@@ -44,9 +44,9 @@ public class Person {
 //        this.age = age;
 //    }
 
-//    public void setAddress(Address address) {
-//        this.address = address;
-//    }
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 
 //    public String getName() {
 //        return name;
@@ -66,6 +66,6 @@ public class Person {
 
     public void introduce() {
         System.out.println("Name: " + name);
-        System.out.print("Surname: " + surname);
+        System.out.println("Surname: " + surname);
     }
 }

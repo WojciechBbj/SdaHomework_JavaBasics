@@ -14,4 +14,8 @@ public class Address {
         this.flatNo = flatNo;
         this.homeNo = homeNo;
     }
+
+    public void showAdress() {
+        System.out.println("Kraj: " + country + ", miasto: " + city);
+    }
 }
