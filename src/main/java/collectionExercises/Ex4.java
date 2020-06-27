@@ -1,6 +1,8 @@
 package collectionExercises;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Ex4 {
@@ -29,9 +31,12 @@ public class Ex4 {
 
     public static void showListedNamesBackwards() {
         System.out.println("2c, showing names backwards");
-        for (int i = 0; i < listOfNames.size(); i++) {
-            System.out.println(listOfNames.get(listOfNames.size() - 1 - i));
-        }
+//        for (int i = 0; i < listOfNames.size(); i++) {
+//            System.out.println(listOfNames.get(listOfNames.size() - 1 - i));
+//        }
+
+        Collections.reverse(listOfNames);
+        showListedNames();
     }
 
     public static void main(String[] args) {
