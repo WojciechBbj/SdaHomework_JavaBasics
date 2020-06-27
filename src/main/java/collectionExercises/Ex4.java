@@ -18,8 +18,12 @@ public class Ex4 {
 
     public static void showListedNames() {
         System.out.println("2b, showing names");
-        for (int i = 0; i < listOfNames.size(); i++) {
-            System.out.println(listOfNames.get(i));
+//        for (int i = 0; i < listOfNames.size(); i++) {
+//            System.out.println(listOfNames.get(i));
+//        }
+
+        for (String element : listOfNames) {
+            System.out.println(element);
         }
     }
 
