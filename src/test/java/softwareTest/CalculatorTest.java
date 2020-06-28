@@ -7,6 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import softwareTest.Calculator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CalculatorTest {
 
@@ -16,7 +17,7 @@ class CalculatorTest {
     }
 
     @ParameterizedTest
-    @CsvSource({ "1, 2, 3", "2, -3, -1", "-3, 5, 2", "-1, -3, -4" })
+    @CsvSource({"1, 2, 3", "2, -3, -1", "-3, 5, 2", "-1, -3, -4"})
     void thatWeCanAddTwoNumbers(double a, double b, double expected) {
         Calculator calculator = new Calculator();
         assertEquals(expected,
@@ -42,5 +43,14 @@ class CalculatorTest {
 
         assertEquals(-1, subtraction, "Sum of a = " + a + " b = " + b + " should be equal -1");
 
+    }
+
+    @ParameterizedTest
+    @CsvSource({"4, 3, 1", "5, 3, 2", "-9, -3, -6", "-7, -2, -5"})
+    void thatWeCanSubtracktNumbers(double a, double b, double expected) {
+        Calculator calculator = new Calculator();
+        assertEquals(expected,
+                calculator.subtract(a, b),
+                "Sum of " + a + " and " + b + " should be " + expected);
     }
 }
