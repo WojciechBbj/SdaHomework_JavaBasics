@@ -1,0 +1,46 @@
+package com.sda.testingbasics.calculator;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import softwareTest.Calculator;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class CalculatorTest {
+
+    @BeforeEach
+    void setUp() {
+
+    }
+
+    @ParameterizedTest
+    @CsvSource({ "1, 2, 3", "2, -3, -1", "-3, 5, 2", "-1, -3, -4" })
+    void thatWeCanAddTwoNumbers(double a, double b, double expected) {
+        Calculator calculator = new Calculator();
+        assertEquals(expected,
+                calculator.add(a, b),
+                "Sum of " + a + " and " + b + " should be " + expected);
+    }
+
+    @Test
+    void thatWeCanSubtractTwoPositiveNumbers() {
+
+        Calculator calculator = new Calculator();
+
+        //given
+
+        double a = 5;
+        double b = 6;
+
+        //when
+
+        double subtraction = calculator.subtract(a, b);
+
+        //test
+
+        assertEquals(-1, subtraction, "Sum of a = " + a + " b = " + b + " should be equal -1");
+
+    }
+}
