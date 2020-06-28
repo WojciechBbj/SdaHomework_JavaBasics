@@ -10,7 +10,7 @@ public class Ex13 {
 
         boolean isAreaCovered;
 
-        if (paintArea > ex12.ex12(figures)) {
+        if (paintArea < ex12.ex12(figures)) {
             isAreaCovered = false;
         } else {
             isAreaCovered = true;

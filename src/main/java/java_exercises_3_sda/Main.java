@@ -31,15 +31,18 @@ public class Main {
         Vet moveAnimal1 = new Vet();
         moveAnimal1.sayHello(animal1);
 
-        Figure figure1 = new Rectangle(5,4);
-        Figure figure2 = new Circle(5);
-        Figure figure3 = new Triangle(4,4);
+        Figure figure1 = new Rectangle(2,2);
+        Figure figure2 = new Circle(2);
+        Figure figure3 = new Triangle(2,1);
 
         Figure[] figures = {figure1, figure2, figure3};
 
+        Ex12 ex12 = new Ex12();
+        System.out.println("Powierzchni figur: " + ex12.ex12(figures));
+
         Ex13 ex13 = new Ex13();
 
-        System.out.println("Farba pokryje powierzchnię wprowadzonych figur: " + ex13.isAreaCovered(figures, 13));
+        System.out.println("Farba pokryje powierzchnię wprowadzonych figur: " + ex13.isAreaCovered(figures, 17.57));
 
     }
 }
